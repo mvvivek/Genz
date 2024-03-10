@@ -12,7 +12,7 @@ class BackButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.setImage(UIImage(systemName: "arrowshape.turn.up.left"), for: .normal)
+        self.setImage(UIImage.backButton, for: .normal)
         self.contentMode = .scaleAspectFit
         self.tintColor = .black
         self.easy.layout(Size(30))

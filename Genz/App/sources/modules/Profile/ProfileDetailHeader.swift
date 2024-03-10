@@ -56,7 +56,7 @@ class ProfileDetailHeader: UICollectionReusableView {
         guard let profileURLString = profileData?.avatar,
               let imageURL = URL(string: profileURLString) else { return }
         profileImage.sd_setImage(with: imageURL,
-                              placeholderImage: UIImage(named: "placeholderImage"))
+                                 placeholderImage: UIImage.placeholderImage)
     }
 }
 

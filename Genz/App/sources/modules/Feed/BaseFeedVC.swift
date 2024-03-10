@@ -65,7 +65,7 @@ class BaseFeedVC: UIViewController {
         view.backgroundColor = .backgroundPrimry
         view.addSubview(collectionView)
         collectionView.easy.layout(Edges())
-                
+        
         collectionView.addSubview(activityIndicatorView)
         activityIndicatorView.easy.layout(Top(50).to(view.safeAreaLayoutGuide, .top), CenterX())
         activityIndicatorView.startAnimating()

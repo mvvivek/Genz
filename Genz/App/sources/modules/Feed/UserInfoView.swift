@@ -14,7 +14,7 @@ class UserInfoView: UIView {
     
     lazy var likeButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+        button.setImage(UIImage.thumbsup, for: .normal)
         button.contentMode = .scaleAspectFit
         button.tintColor = .black
         button.addTarget(self, action: #selector(didTapLike), for: .touchUpInside)
@@ -70,7 +70,7 @@ class UserInfoView: UIView {
         let currentPostLikeStatus = (Store.shared.likes[postId] ?? false)
         Store.shared.likes[postId] = !currentPostLikeStatus
         let isLiked = Store.shared.likes[postId] ?? false
-        likeButton.setImage(UIImage(systemName: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup"), for: .normal)
+        likeButton.setImage(isLiked ? UIImage.thumbsupFill : UIImage.thumbsup, for: .normal)
     }
     
     func configure(post: Post?) {
@@ -78,13 +78,13 @@ class UserInfoView: UIView {
         name.text = post?.username
         nlikes.text = String(post?.likes ?? 0) + " likes"
         let isLiked = Store.shared.likes[postId ?? ""] ?? false
-        likeButton.setImage(UIImage(systemName: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup"),
+        likeButton.setImage(isLiked ? UIImage.thumbsupFill : UIImage.thumbsup,
                             for: .normal)
         
         if let profileImageURLString = post?.profilePictureUrl,
            let imageURL = URL(string: profileImageURLString) {
             profileImage.sd_setImage(with: imageURL,
-                                  placeholderImage: UIImage(systemName: "person.crop.circle"))
+                                     placeholderImage: UIImage.profileImage)
         }
     }
     

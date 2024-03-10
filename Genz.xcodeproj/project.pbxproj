@@ -16,7 +16,7 @@
 		BFD7DECF2B9AE3B4004E3095 /* GenzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DECE2B9AE3B4004E3095 /* GenzUITestsLaunchTests.swift */; };
 		BFD7DEE12B9B4F2D004E3095 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DEE02B9B4F2D004E3095 /* NetworkManager.swift */; };
 		BFD7DEE42B9B4FB9004E3095 /* EasyPeasy in Frameworks */ = {isa = PBXBuildFile; productRef = BFD7DEE32B9B4FB9004E3095 /* EasyPeasy */; };
-		BFD7DEE72B9B5A6A004E3095 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DEE62B9B5A6A004E3095 /* FeedModel.swift */; };
+		BFD7DEE72B9B5A6A004E3095 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DEE62B9B5A6A004E3095 /* ResponseModel.swift */; };
 		BFD7DEEB2B9C27F5004E3095 /* PostFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DEEA2B9C27F5004E3095 /* PostFeedVC.swift */; };
 		BFD7DEED2B9C2EDC004E3095 /* FeedCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DEEC2B9C2EDC004E3095 /* FeedCVCell.swift */; };
 		BFD7DEF22B9C7F8F004E3095 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BFD7DEF12B9C7F8F004E3095 /* SDWebImageSwiftUI */; };
@@ -32,6 +32,7 @@
 		BFD7DF142B9DE309004E3095 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BFD7DF132B9DE309004E3095 /* Toast */; };
 		BFD7DF1A2B9DFA9B004E3095 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF192B9DFA9A004E3095 /* Extenstions.swift */; };
 		BFD7DF1C2B9E1903004E3095 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF1B2B9E1903004E3095 /* Store.swift */; };
+		BFD7DF1F2B9E28D3004E3095 /* UIImage+Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF1E2B9E28D3004E3095 /* UIImage+Asset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +65,7 @@
 		BFD7DECC2B9AE3B4004E3095 /* GenzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenzUITests.swift; sourceTree = "<group>"; };
 		BFD7DECE2B9AE3B4004E3095 /* GenzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenzUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BFD7DEE02B9B4F2D004E3095 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		BFD7DEE62B9B5A6A004E3095 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		BFD7DEE62B9B5A6A004E3095 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		BFD7DEEA2B9C27F5004E3095 /* PostFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFeedVC.swift; sourceTree = "<group>"; };
 		BFD7DEEC2B9C2EDC004E3095 /* FeedCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCVCell.swift; sourceTree = "<group>"; };
 		BFD7DEF42B9CD1FC004E3095 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		BFD7DF0E2B9DDF31004E3095 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		BFD7DF192B9DFA9A004E3095 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
 		BFD7DF1B2B9E1903004E3095 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BFD7DF1E2B9E28D3004E3095 /* UIImage+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Asset.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				BFD7DEB42B9AE3B4004E3095 /* Assets.xcassets */,
 				BFD7DEF42B9CD1FC004E3095 /* Color.xcassets */,
 				BFD7DEF62B9CD2C1004E3095 /* UIColor+Pallete.swift */,
+				BFD7DF1E2B9E28D3004E3095 /* UIImage+Asset.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -255,7 +258,7 @@
 		BFD7DF1D2B9E2811004E3095 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BFD7DEE62B9B5A6A004E3095 /* FeedModel.swift */,
+				BFD7DEE62B9B5A6A004E3095 /* ResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,10 +412,11 @@
 				BFD7DEF92B9CDF0F004E3095 /* PostDetailVC.swift in Sources */,
 				BFD7DF062B9DAA7A004E3095 /* BaseFeedVC.swift in Sources */,
 				BFD7DEEB2B9C27F5004E3095 /* PostFeedVC.swift in Sources */,
-				BFD7DEE72B9B5A6A004E3095 /* FeedModel.swift in Sources */,
+				BFD7DEE72B9B5A6A004E3095 /* ResponseModel.swift in Sources */,
 				BFD7DEAC2B9AE3B3004E3095 /* AppDelegate.swift in Sources */,
 				BFD7DEED2B9C2EDC004E3095 /* FeedCVCell.swift in Sources */,
 				BFD7DF0A2B9DB23D004E3095 /* BackButton.swift in Sources */,
+				BFD7DF1F2B9E28D3004E3095 /* UIImage+Asset.swift in Sources */,
 				BFD7DF0C2B9DDD44004E3095 /* ProfileDetailHeader.swift in Sources */,
 				BFD7DF042B9D6D26004E3095 /* GenzVideoPlayer.swift in Sources */,
 				BFD7DEAE2B9AE3B3004E3095 /* SceneDelegate.swift in Sources */,

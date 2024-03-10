@@ -23,7 +23,7 @@ class PostFeedVC: BaseFeedVC {
         
         // Create an image view with your image
         let profileButton = UIButton()
-        profileButton.setImage(UIImage(systemName: "person.crop.circle"), for: .normal)
+        profileButton.setImage(UIImage.profileImage, for: .normal)
         profileButton.contentMode = .scaleAspectFit
         profileButton.tintColor = .black
         profileButton.easy.layout(Size(30))
