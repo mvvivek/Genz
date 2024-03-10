@@ -46,6 +46,8 @@ class UserInfoView: UIView {
         
         addSubview(profileImage)
         profileImage.easy.layout(Top(10), Left(14), Size(42))
+        profileImage.isUserInteractionEnabled = true
+        profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapProfile)))
         
         addSubview(likeButton)
         likeButton.easy.layout(CenterY(), Right(14), Size(32))
@@ -84,5 +86,10 @@ class UserInfoView: UIView {
             profileImage.sd_setImage(with: imageURL,
                                   placeholderImage: UIImage(systemName: "person.crop.circle"))
         }
+    }
+    
+   @objc func didTapProfile() {
+       let profileDetailVC = ProfileDetailVC()
+       UIApplication.topViewController()?.navigationController?.pushViewController(profileDetailVC, animated: true)
     }
 }
