@@ -45,12 +45,12 @@ class UserInfoView: UIView {
         super.init(frame: frame)
         
         addSubview(profileImage)
-        profileImage.easy.layout(Top(10), Left(14), Size(42))
+        profileImage.easy.layout(Top(10), Left(10), Size(42))
         profileImage.isUserInteractionEnabled = true
         profileImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapProfile)))
         
         addSubview(likeButton)
-        likeButton.easy.layout(CenterY(), Right(14), Size(32))
+        likeButton.easy.layout(CenterY(), Right(10), Size(32))
         
         addSubview(name)
         name.easy.layout(Top().to(profileImage, .top), Left(5).to(profileImage), Right(5).to(likeButton))
