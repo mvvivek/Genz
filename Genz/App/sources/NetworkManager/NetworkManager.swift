@@ -19,7 +19,7 @@ enum GenxAPI {
     case userDetail
     
     private var baseURL: String {
-         "https://3675b858-7e98-4956-9c10-ecc8d76c1b41.mock.pstmn.io" 
+         "https://3675b858-7e98-4956-9c10-ecc8d76c1b41.mock.pstmn.io"
     }
     
     var path: String {
