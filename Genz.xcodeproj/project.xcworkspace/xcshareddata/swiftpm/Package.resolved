@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "easypeasy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nakiostudio/EasyPeasy",
+      "state" : {
+        "revision" : "b0028f63d47bcb32e37d8abb9cc5d5a781742a4e",
+        "version" : "1.10.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "73b9397cfbd902f606572964055464903b1d84c6",
+        "version" : "5.19.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
+      "state" : {
+        "revision" : "261b6cec35686d2dc192b809ab50742b4502a73b",
+        "version" : "2.2.6"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scalessec/Toast-Swift",
+      "state" : {
+        "revision" : "404ac98e0080a3d9f0630e007838284e04528bcd",
+        "version" : "5.1.0"
+      }
+    }
+  ],
+  "version" : 2
+}
