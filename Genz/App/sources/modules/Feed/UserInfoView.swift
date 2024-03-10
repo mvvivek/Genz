@@ -65,7 +65,7 @@ class UserInfoView: UIView {
         guard let postId = postId else {
             return
         }
-        let currentPostLikeStatus = !(Store.shared.likes[postId] ?? false)
+        let currentPostLikeStatus = (Store.shared.likes[postId] ?? false)
         Store.shared.likes[postId] = !currentPostLikeStatus
         let isLiked = Store.shared.likes[postId] ?? false
         likeButton.setImage(UIImage(systemName: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup"), for: .normal)
