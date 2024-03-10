@@ -9,8 +9,8 @@ import UIKit
 import EasyPeasy
 
 class UserInfoView: UIView {
-    
-    var isLiked = false
+        
+    var postId: String?
     
     lazy var likeButton: UIButton = {
         let button = UIButton()
@@ -62,13 +62,22 @@ class UserInfoView: UIView {
     }
     
     @objc func didTapLike() {
-        isLiked = !isLiked
+        guard let postId = postId else {
+            return
+        }
+        let currentPostLikeStatus = !(Store.shared.likes[postId] ?? false)
+        Store.shared.likes[postId] = !currentPostLikeStatus
+        let isLiked = Store.shared.likes[postId] ?? false
         likeButton.setImage(UIImage(systemName: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup"), for: .normal)
     }
     
     func configure(post: Post?) {
+        postId = post?.postId
         name.text = post?.username
         nlikes.text = String(post?.likes ?? 0) + " likes"
+        let isLiked = Store.shared.likes[postId ?? ""] ?? false
+        likeButton.setImage(UIImage(systemName: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup"),
+                            for: .normal)
         
         if let profileImageURLString = post?.profilePictureUrl,
            let imageURL = URL(string: profileImageURLString) {

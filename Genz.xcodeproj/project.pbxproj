@@ -31,6 +31,7 @@
 		BFD7DF0F2B9DDF31004E3095 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF0E2B9DDF31004E3095 /* UserInfoView.swift */; };
 		BFD7DF142B9DE309004E3095 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BFD7DF132B9DE309004E3095 /* Toast */; };
 		BFD7DF1A2B9DFA9B004E3095 /* Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF192B9DFA9A004E3095 /* Extenstions.swift */; };
+		BFD7DF1C2B9E1903004E3095 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7DF1B2B9E1903004E3095 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BFD7DF0B2B9DDD44004E3095 /* ProfileDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailHeader.swift; sourceTree = "<group>"; };
 		BFD7DF0E2B9DDF31004E3095 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		BFD7DF192B9DFA9A004E3095 /* Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extenstions.swift; sourceTree = "<group>"; };
+		BFD7DF1B2B9E1903004E3095 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				BFD7DF192B9DFA9A004E3095 /* Extenstions.swift */,
+				BFD7DF1B2B9E1903004E3095 /* Store.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				BFD7DF082B9DAEC5004E3095 /* ProfileDetailVC.swift in Sources */,
 				BFD7DF1A2B9DFA9B004E3095 /* Extenstions.swift in Sources */,
 				BFD7DF0F2B9DDF31004E3095 /* UserInfoView.swift in Sources */,
+				BFD7DF1C2B9E1903004E3095 /* Store.swift in Sources */,
 				BFD7DEE12B9B4F2D004E3095 /* NetworkManager.swift in Sources */,
 				BFD7DEF92B9CDF0F004E3095 /* PostDetailVC.swift in Sources */,
 				BFD7DF062B9DAA7A004E3095 /* BaseFeedVC.swift in Sources */,

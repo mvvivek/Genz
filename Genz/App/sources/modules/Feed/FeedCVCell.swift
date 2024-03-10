@@ -45,12 +45,11 @@ class FeedCVCell: UICollectionViewCell {
     
     func configure(post: Post?) {
         thumbnail.image = UIImage(named: "placeholderImage")
-    
+        userInfoView.configure(post: post)
         guard let thumbnailURLString = post?.thumbnailUrl,
               let imageURL = URL(string: thumbnailURLString) else { return }
         thumbnail.sd_setImage(with: imageURL,
                               placeholderImage: UIImage(named: "placeholderImage"))
-        userInfoView.configure(post: post)
     }
 }
 
