@@ -160,6 +160,7 @@
 		BFD7DEDD2B9B4CEE004E3095 /* sources */ = {
 			isa = PBXGroup;
 			children = (
+				BFD7DF1D2B9E2811004E3095 /* Model */,
 				BFD7DF162B9DF547004E3095 /* Utils */,
 				BFD7DEFC2B9D5920004E3095 /* Components */,
 				BFD7DEF32B9C7FE6004E3095 /* Resources */,
@@ -192,7 +193,6 @@
 			children = (
 				BFD7DF052B9DAA7A004E3095 /* BaseFeedVC.swift */,
 				BFD7DEEA2B9C27F5004E3095 /* PostFeedVC.swift */,
-				BFD7DEE62B9B5A6A004E3095 /* FeedModel.swift */,
 				BFD7DEEC2B9C2EDC004E3095 /* FeedCVCell.swift */,
 				BFD7DF0E2B9DDF31004E3095 /* UserInfoView.swift */,
 			);
@@ -250,6 +250,14 @@
 				BFD7DF1B2B9E1903004E3095 /* Store.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BFD7DF1D2B9E2811004E3095 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFD7DEE62B9B5A6A004E3095 /* FeedModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
